@@ -17,7 +17,7 @@ def scan_port(ip, port):
 if __name__ == "__main__":
     ip = input("Enter IP address to scan: ")    # Get the target IP from user
     for port in range(20, 26):  # Scan ports 20 to 25
-        if scan_port(ip, port)  # Call the scan_port function
+        if scan_port(ip, port):  # Call the scan_port function
             print(f"Port {port} is OPEN")   # If open, print that the port is open
         else:
             print(f"Port {port} is CLOSED") # If closed, print that the port is closed
